@@ -25,7 +25,7 @@ def dijkstra(start):
     distance[start] = 0
     visited[start] = True
     for j in graph[start]:
-        distance[j[0]] = j[1] # graph[a] = (b, c)
+        distance[j[0]] = j[1]
     for i in range(n-1):
         now = get_smallest_node()
         visited[now] = True
